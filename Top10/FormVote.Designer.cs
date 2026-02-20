@@ -42,6 +42,7 @@
             this.listBoxUniqeSinger.Name = "listBoxUniqeSinger";
             this.listBoxUniqeSinger.Size = new System.Drawing.Size(197, 303);
             this.listBoxUniqeSinger.TabIndex = 0;
+            this.listBoxUniqeSinger.SelectedIndexChanged += new System.EventHandler(this.listBoxUniqeSinger_SelectedIndexChanged);
             // 
             // textBoxSinger1
             // 

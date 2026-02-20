@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.listViewTop10 = new System.Windows.Forms.ListView();
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderVotes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listViewTop10
             // 
+            this.listViewTop10.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderName,
+            this.columnHeaderVotes});
             this.listViewTop10.HideSelection = false;
             this.listViewTop10.Location = new System.Drawing.Point(83, 52);
             this.listViewTop10.Name = "listViewTop10";
@@ -40,7 +45,17 @@
             this.listViewTop10.TabIndex = 0;
             this.listViewTop10.TabStop = false;
             this.listViewTop10.UseCompatibleStateImageBehavior = false;
-            this.listViewTop10.View = System.Windows.Forms.View.List;
+            this.listViewTop10.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeaderName
+            // 
+            this.columnHeaderName.Text = "Название исполнителя";
+            this.columnHeaderName.Width = 162;
+            // 
+            // columnHeaderVotes
+            // 
+            this.columnHeaderVotes.Text = "Количество голосов";
+            this.columnHeaderVotes.Width = 147;
             // 
             // FormTop10
             // 
@@ -58,5 +73,7 @@
         #endregion
 
         private System.Windows.Forms.ListView listViewTop10;
+        private System.Windows.Forms.ColumnHeader columnHeaderName;
+        private System.Windows.Forms.ColumnHeader columnHeaderVotes;
     }
 }
